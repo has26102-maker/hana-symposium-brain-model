@@ -10,12 +10,12 @@ import matplotlib.cm as cm
 st.set_page_config(page_title="Metabolic Cost of Agency Model", layout="wide")
 
 # Set global font and text color for all Matplotlib plots to Arial and Black
-plt.rcParams['font.family'] = 'Arial'
+plt.rcParams['font.family'] = 'Times New Roman'
 plt.rcParams['text.color'] = 'black'
 plt.rcParams['axes.labelcolor'] = 'black'
-plt.rcParams['xtick.color'] = 'black'
-plt.rcParams['ytick.color'] = 'black'
-plt.rcParams['axes.edgecolor'] = 'black'
+plt.rcParams['xtick.color'] = 'red'
+plt.rcParams['ytick.color'] = 'blue'
+plt.rcParams['axes.edgecolor'] = 'green'
 
 # =========================================================================
 # 🎨 STRICT WHITE THEME & ACCESSIBILITY CONFIGURATION
@@ -65,9 +65,10 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-st.markdown("<h1 class='main-title'>🧠 The Cost of Human Agency: Metabolic Brain Simulation</h1>", unsafe_allow_html=True)
+st.markdown("<h1 class='main-title'>The Cost of Human Agency: The Causes of Human Algorithms and Behavioral Patterns from a Biological/Psychological Perspective Focused on Metabolic Resources 
+</h1>", unsafe_allow_html=True)
 st.write(
-    "Presented at the Hana Academy Seoul International Symposium (2026). "
+    "Seoyeon Oh, Kyungeun Joe, Awon Hwang / Hana Academy Seoul "
     "This simulation maps real-time blood glucose resource signaling onto a detailed "
     "2D anatomical drawing of the human brain, showing the metabolic triggers of the 'AI Trap'."
 )
@@ -75,9 +76,9 @@ st.write(
 # =========================================================================
 # 🕹️ SIMULATION ENGINE
 # =========================================================================
-st.sidebar.header("🕹️ Simulation Parameters")
+st.sidebar.header("Simulation Parameters")
 init_glucose = st.sidebar.slider("Initial Glucose Level (%)", 50, 100, 100)
-depletion_threshold = st.sidebar.slider("Ego Depletion Threshold (T_thresh)", 20, 60, 40)
+depletion_threshold = st.sidebar.slider("Ego Depletion Threshold ", 20, 60, 40)
 num_decisions = st.sidebar.slider("Total Number of Decisions in Trial", 10, 50, 30)
 
 st.sidebar.subheader("Environmental Variables")
@@ -245,7 +246,7 @@ st.pyplot(fig_glucose)
 # 📊 RAW EMPIRICAL DATA OUTPUT
 # =========================================================================
 st.markdown("---")
-st.subheader("📊 Raw Empirical Simulation Data Output")
+st.subheader("Raw Observational Simulation Data Output")
 st.write("You can copy this data directly into Excel or SPSS for statistical validation in your paper results section.")
 st.dataframe(df_results, use_container_width=True)
 
@@ -253,7 +254,7 @@ st.dataframe(df_results, use_container_width=True)
 # 📚 ACADEMIC LITERATURE & EMPIRICAL FRAMEWORK REFERENCE
 # =========================================================================
 st.markdown("---")
-st.subheader("📚 Academic Literature & Empirical Framework Reference")
+st.subheader("Academic Literature & Observational Framework Reference")
 st.write("Integrate these foundational theories and statistical breakdowns directly into your Symposium Paper sections:")
 
 st.markdown("""
