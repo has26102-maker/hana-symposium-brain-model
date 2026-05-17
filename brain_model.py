@@ -65,8 +65,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-st.markdown("<h1 class='main-title'>The Cost of Human Agency: The Causes of Human Algorithms and Behavioral Patterns from a Biological/Psychological Perspective Focused on Metabolic Resources 
-</h1>", unsafe_allow_html=True)
+st.markdown("<h1 class='main-title'>Glucose and Complexity Rate Simulation on the Brain</h1>", unsafe_allow_html=True)
 st.write(
     "Seoyeon Oh, Kyungeun Joe, Awon Hwang / Hana Academy Seoul "
     "This simulation maps real-time blood glucose resource signaling onto a detailed "
