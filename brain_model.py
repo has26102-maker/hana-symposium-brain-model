@@ -151,7 +151,8 @@ st.markdown(f"""
 """, unsafe_allow_html=True)
 
 # Calculate color map for the PFC based on glucose percentage (Red -> Yellow -> Green)
-pfc_color_map = cm.get_cmap('RdYlGn')
+import matplotlib.pyplot as plt
+pfc_color_map = plt.colormaps['RdYlGn']
 normalized_glucose = step_glucose / 100.0
 pfc_dynamic_color = pfc_color_map(normalized_glucose)
 
